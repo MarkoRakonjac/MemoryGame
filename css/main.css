@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+#wrapp {
+  width: 1240px;
+  height: 800px;
+  margin: 40px auto 0;
+  background-image: url("../img/gamebg.jpg");
+  background-position: center;
+  background-size: 110%;
+  position: relative;
+  overflow: hidden;
+}
+
+.level1-container {
+  width: 340px;
+  height: 490px;
+  margin: 0 auto;
+  position: absolute;
+/*   border:1px solid #fff; */
+  bottom: 15px;
+  right: 80px;
+  transition: all .5s;
+  z-index: 1;
+  display: none;
+
+}
+.level2-container {
+  width: 680px;
+  height: 490px;
+  margin: 0 auto;
+  position: absolute;
+/*   border:1px solid #fff; */
+  bottom: 15px;
+  right: 80px;
+  z-index: 1;
+  display: none;
+
+}
+
+.box {
+  width: 50px;
+  height: 60px;
+  margin: 10px 10px;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+
+}
+
+.back {
+  width: 50px;
+  height: 60px;
+  border: 1px solid #757578;
+  box-sizing: border-box;
+  position: absolute;
+  line-height: 60px;
+  text-align: center;
+  font-size: 35px;
+  background-color: #fdd706;
+  color: #000;
+  -webkit-box-shadow: 0px 8px 74px 11px rgba(253,216,6,0.61);
+  -moz-box-shadow: 0px 8px 74px 11px rgba(253,216,6,0.61);
+  box-shadow: 0px 8px 74px 11px rgba(253,216,6,0.61);
+   display: none; 
+
+
+}
+
+.front {
+  width: 50px;
+  height: 60px;
+  border: 1px solid #525253;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #383240;
+  display: block;
+
+}
+
+
+
+.time {
+  width: 500px;
+  height: 25px;
+  margin: 30px 90px 0 0;
+  position: relative;
+  border-radius: 7px;
+  border:2px solid #fee004;
+  background-color:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#01052a+1,4e4d5b+100 */
+  background: #01052a; /* Old browsers */
+  background: -moz-linear-gradient(top, #01052a 1%, #4e4d5b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #01052a 1%,#4e4d5b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #01052a 1%,#4e4d5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01052a', endColorstr='#4e4d5b',GradientType=0 ); /* IE6-9 */;
+  float: right;
+  display: none;
+
+}
+.time:before {
+  content: url("../img/clock.png");
+  position: absolute;
+  right: -55px;
+  top: -20px;
+}
+
+
+
+.time-left {
+  width: 100%;
+  height: 100%;
+  background-color: #ffca00;
+  float: right;
+}
+.extra-time {
+  content:url("../img/extratime.png");
+  position: absolute;
+  left: -55px;
+  top: -14px;
+  transform: rotate(-15deg);
+   display: none; 
+}
+
+.high-score-box {
+    width: 400px;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  border: 4px solid  #ffca00;
+  background-color: rgba(75,44,85,.7);
+  border-radius: 20%;
+  overflow: hidden;
+}
+.high-score {
+   font-size: 50px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Audiowide', cursive;
+  color: #ffca00;
+   -webkit-text-fill-color: #ffca00; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+
+}
+.table {
+    font-size: 20px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Audiowide', cursive;
+  color: #ffca00;
+}
+
+.start-game-box {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 63%;
+  transform: translate(-50%,-50%);
+}
+
+.your-name{
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Audiowide', cursive;
+  color: #ffca00;
+   -webkit-text-fill-color: #ffca00; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+
+}
+#username-box {
+  width: 400px;
+  height: 65px;
+  display: block;
+  margin: 0 auto 20px;
+  border: 4px solid  #ffca00;
+  background-color: rgba(75,44,85,.7);
+  outline: none;
+  color: #ffca00;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 20%;
+  font-family: 'Audiowide', cursive;
+
+
+}
+
+
+.start-btn {
+  width: 400px;
+  height: 200px;
+  background-image: url("../img/startbtn.gif");
+  background-size: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30%;
+  border: 4px solid  #ffca00;
+  background-color: rgba(75,44,85,.7);
+  outline: none;
+
+}
+
+.start-count {
+  display: block;
+  font-size: 400px;
+  color: #ffca00;
+  font-family: 'Audiowide', cursive;
+  text-align: center;
+  display: none;
+  margin-top: 100px;
+
+}
+
+
+.game-over {
+  width: 800px;
+  height: 320px;
+  background-image: url("../img/gameover.png");
+  background-size: 300px;
+  background-size: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  z-index: 2;
+}
+
+.score-box {
+  width: 140px;
+  height: 85px;
+  text-align: center;
+  border: 4px solid  #ffca00;
+  background-color: rgba(75,44,85,.7);
+  border-radius: 50%;
+  color: #ffca00;
+  font-size:  40px;
+  line-height:  78px;
+  font-family: 'Audiowide', cursive;
+  position: absolute;
+  left: 75px;
+  top: 35px;
+  display: none;
+}
+.score-box:before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/player-caracter.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 200px 150px;
+  width: 200px;
+  height: 150px;
+  left: -120px;
+  top: -30px;
+}
+.player-name {
+  width: 179px;
+  height: 40px; 
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  color: #ffca00;
+  font-family: 'Audiowide', cursive;
+  top: 150px;
+  left: 10px;
+}
+
+.sound-btn{
+  width: 75px;  
+  height: 55px; 
+  font-family: 'Audiowide', cursive;
+  font-size: 15px;
+  color: #ffca00;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+  border-radius: 50%;
+  border:2px solid #ffca00;
+
+
+}
+.sound-btn-off{
+  width: 75px;  
+  height: 55px; 
+  font-family: 'Audiowide', cursive;
+  font-size: 15px;
+  color: #ffca00;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  border:2px solid #ffca00;
+
+
+}
