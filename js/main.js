@@ -36,7 +36,7 @@ let loop;
 let timeLoop;
 let highScoreBox = document.querySelector('.high-score-box');
 
-highScore.length = 0;
+// highScore.length = 0;
 
 
 
